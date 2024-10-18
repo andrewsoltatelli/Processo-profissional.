@@ -1,0 +1,40 @@
+package Atividade1;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+	
+	//1.Escreva um programa que leia um número e informe se ele é divisível por 10, 
+	//por 5 ou por 2 ou se não é divisível por nenhum deles. 
+
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.print("Digite um numero: ");
+		
+		
+		int valor = ler.nextInt();
+		
+		int resto = valor % 10;
+		if (resto == 0) 
+			System.out.println(" O numero é divisivel por 10.");
+		
+			resto = valor % 5;
+			if (resto == 0) 
+				System.out.println(" O numero é divisivel por 5.");
+				
+				resto = valor % 2;
+				if (resto == 0) 
+					System.out.println(" O numero é divisivel por 2.");
+				 
+					if (resto != 0) 
+						System.out.println(" O numero não é divisivel por nenhum deles. ");
+					
+				
+		
+		
+
+	}
+
+}
